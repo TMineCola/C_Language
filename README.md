@@ -8,4 +8,10 @@
 
 https://hackmd.io/s/BkFHVn7pZ
 
-### 
+### AvgAndSD.c
+
+https://hackmd.io/s/rkTit926b
+
+### GradeSort
+
+https://hackmd.io/s/B1WNCJ10-
