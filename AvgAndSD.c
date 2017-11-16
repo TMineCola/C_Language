@@ -41,7 +41,8 @@ double Calc_sd(double data[], int n) {
     double avg = Calc_avg(data, n);
     double sd = 0;
     for(int i = 0; i < n; i++) {
-        sd += power(data[i] - avg, 2);
+        //sd += power(data[i] - avg, 2);
+        sd += (data[i]-avg)*(data[i]-avg);
     }
     return sqrt(sd / n);
 }
