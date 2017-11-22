@@ -23,3 +23,7 @@ https://hackmd.io/s/SJb-Yiq1z
 ### StringPermutation
 
 https://hackmd.io/s/rkYknh9yz
+
+### mahjong.c
+
+https://hackmd.io/s/rkW_3KblG
