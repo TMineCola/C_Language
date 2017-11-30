@@ -1,5 +1,9 @@
 # C_Language
 
+### Tools
+Exam_Class - 上機考教室分配(平均、比例分配、First in First Full)
+RandomFile - 隨機產生指定範圍及數量的整數或浮點數
+
 ### BMI.c
 
 輸入身高、體重，計算其BMI並顯示體位
