@@ -3,6 +3,15 @@
 #include <string.h>
 #include <time.h>
 
+/*
+    File Example:
+    教室數量 教室名稱 教室人數上限 排序方式 學生人數
+    學號 姓名
+
+    2 管241 40 管268 80 C 1
+    111111111 Name
+*/
+
 int main() {
     // 打亂時間參數
     srand(time(NULL));
