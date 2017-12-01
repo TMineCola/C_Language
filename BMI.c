@@ -15,8 +15,9 @@ void CheckBMI(double BMI) {
 }
 
 int main() {
-    int h, w;
-    scanf("%d %d", &h, &w);
+    double h, w;
+    scanf("%lf %lf", &h, &w);
     printf("%lf ", CalcBMI(h, w));
     CheckBMI(CalcBMI(h, w));
+    return 0;
 }
