@@ -21,7 +21,7 @@ int main() {
 
     printf("Input random type (I = int, F = float): ");
     scanf("%c", &type);
-    printf("\nInput the range (less to max): ");
+    printf("\nInput the range (less(if 0 please use -1) to max): ");
     scanf("%d %d", &less, &max);
     printf("\nInput the amount: ");
     scanf("%d", &num);
@@ -32,10 +32,10 @@ int main() {
     }
 
     //依據類型產生亂數, 並將第一位數填入數量, 如果整數要包含 0 請輸入 -1
-    fprintf(output_file, "%d ", num);
+    fprintf(output_file, "%d\n", num);
     for(int i = 0; i < num; i++) {
         if(type == 'I') {
-            fprintf(output_file, "%d ", (rand() % (max - less)) + less + 1);
+            fprintf(output_file, "%d ", (rand() % (max - less)) + 1 +less);
         } else if(type == 'F') {
             fprintf(output_file, "%f ", ((float)rand()/(float)(RAND_MAX)) * (max - less) + less);
         }
