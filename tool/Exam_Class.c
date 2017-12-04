@@ -4,7 +4,7 @@
 #include <time.h>
 
 /*
-    File Example:
+    File Example: 檔案名稱 input.txt
     教室數量 教室名稱 教室人數上限 排序方式 學生人數
     學號 姓名
 
@@ -70,7 +70,7 @@ int main() {
             // 平均分配
             max = n / class_num;
             for(int i = 0; i < class_num; i++) {
-                fprintf(output_file, "教室名稱：%s\n", class_name[i]);
+                fprintf(output_file, "教室名稱：%s （%d）\n", class_name[i], max);
                 for(int j = max * i; j < max * (i + 1); j++) {
                     fprintf(output_file, "%d %s\n", stdid[j], name[j]);
                 }
@@ -92,7 +92,7 @@ int main() {
             for(int i = 0; i < class_num; i++) {
                 // 計算比例
                 max = (float)n * ((float)class_max[i] / (float)total);
-                fprintf(output_file, "教室名稱：%s\n", class_name[i]);
+                fprintf(output_file, "教室名稱：%s （%d）\n", class_name[i], max);
                 for(int j = count; j < count + max; j++) {
                     fprintf(output_file, "%d %s\n", stdid[j], name[j]);
                 }
@@ -109,8 +109,8 @@ int main() {
         case 'C':
             // 順序優先
             for(int i = 0; i < class_num; i++) {
-                fprintf(output_file, "教室名稱：%s\n", class_name[i]);
                 max = count + class_max[i];
+                fprintf(output_file, "教室名稱：%s （%d）\n", class_name[i], max);
                 if(max > n) {
                     max = n;
                 }
