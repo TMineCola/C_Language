@@ -4,11 +4,14 @@
 void routePlan(int input[], int num, int max) {
     int sum = 0, count = num;
     // 搭滿的情況
-    for(int i = num - 1; i >= 0; i-=max) {
+    for(int i = num - 1; i > 0; i-=max) {
+        if(num < max) {
+            break;
+        }
         sum += (input[i] - 1) * 2;
     }
     // 非搭滿的情況
-    if(count / max == 0 && count % max != 0) {
+    if(count / max == 0 && count % max != 0 && max > num) {
         sum += (input[count - 1] - 1) * 2;
     }
     printf("%d", sum);
