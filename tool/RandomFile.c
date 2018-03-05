@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+/*
+    輸入欲產生整數(I)或浮點數(F)再來輸入產生區間 A - B, 唯注意亂數若為 0 開始請輸入 -1
+*/
+
 int main() {
     // Amount
     int num;
